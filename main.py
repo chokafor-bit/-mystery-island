@@ -4,16 +4,11 @@ from features.player import create_player
 from features.inventory import show_inventory
 from features.locations import explore
 
-
-# CREATE PLAYER
 player = create_player()
 
 print(GREEN + f"\nWelcome to Mystery Island, {player['name']}!" + RESET)
 
 game_running = True
-
-
-# MAIN GAME LOOP
 while game_running:
 
     print(PURPLE + BOLD)
@@ -34,7 +29,6 @@ while game_running:
 
     choice = input(YELLOW + "\nChoose an option: " + RESET)
 
-    # EXPLORE
     if choice == "1":
 
         won = explore(player)
@@ -42,12 +36,9 @@ while game_running:
         if won:
             game_running = False
 
-    # VIEW INVENTORY
     elif choice == "2":
 
         show_inventory(player)
-
-    # VIEW INSTRUCTIONS
     elif choice == "3":
 
         print(CYAN + "\n========== INSTRUCTIONS ==========")
@@ -60,7 +51,6 @@ while game_running:
         print("Keep your energy above zero!")
         print("==================================" + RESET)
 
-    # QUIT GAME
     elif choice == "4":
 
         print(YELLOW + "\nThanks for playing, adventurer!" + RESET)
@@ -69,8 +59,6 @@ while game_running:
     else:
 
         print(RED + "Invalid choice! Try again." + RESET)
-
-    # CHECK ENERGY
     if game_running and player["energy"] <= 0:
 
         print(RED + BOLD)
@@ -83,8 +71,5 @@ while game_running:
         game_running = False
 
     if game_running:
-
         input(YELLOW + "\nPress Enter to continue..." + RESET)
-
-
 print(PURPLE + "\nThank you for playing Mystery Island!" + RESET)

@@ -7,10 +7,9 @@ from features.lighthouse import light_beacon
 
 
 def explore(player):
-
+    # pass
     location = player["location"]
 
-    # BEACH
     if location == "Beach":
 
         print(BLUE + "\nYou are at the Beach." + RESET)
@@ -32,7 +31,6 @@ def explore(player):
         else:
             print(RED + "Invalid action!" + RESET)
 
-    # JUNGLE
     elif location == "Jungle":
 
         print(BLUE + "\nYou are in the Jungle." + RESET)
@@ -73,7 +71,6 @@ def explore(player):
         else:
             print(RED + "Invalid action!" + RESET)
 
-    # CAVE
     elif location == "Cave":
 
         print(BLUE + "\nYou are in the Cave." + RESET)
@@ -100,7 +97,6 @@ def explore(player):
         else:
             print(RED + "Invalid action!" + RESET)
 
-    # OLD BRIDGE
     elif location == "Old Bridge":
 
         print(BLUE + "\nYou are at the Old Bridge." + RESET)
@@ -124,7 +120,6 @@ def explore(player):
         else:
             print(RED + "Invalid action!" + RESET)
 
-    # LIGHTHOUSE
     elif location == "Lighthouse":
 
         print(BLUE + "\nYou are inside the Lighthouse." + RESET)

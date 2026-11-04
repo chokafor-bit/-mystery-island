@@ -2,9 +2,8 @@ from colors import YELLOW, RESET
 
 
 def create_player():
-
+    # pass
     player_name = input(YELLOW + "What is your name, adventurer? " + RESET)
-
     player = {
         "name": player_name,
         "location": "Beach",
