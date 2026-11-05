@@ -18,5 +18,7 @@ def light_beacon(player):
     print(RESET)
     print(f"Congratulations, {player['name']}!")
     print(f"You finished with {player['coins']} coins.")
-
+    print(f"You finished with {player['energy']}  energy.")
+    print(f"You finished at level {player['level']}.")
+    print(f"You finished with {player['life']} lives.")
     return True

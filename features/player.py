@@ -7,6 +7,8 @@ def create_player():
     player = {
         "name": player_name,
         "location": "Beach",
+        "level": 1,
+        "life": 3,
         "coins": 0,
         "energy": 5,
         "inventory": [],
